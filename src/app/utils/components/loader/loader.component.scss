@@ -1,0 +1,29 @@
+@import '../../../../assets/scss/gutter';
+@import '../../../../assets/scss/mixins';
+
+.loader-wrapper {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0e0e0e;
+}
+.chars-wrapper {
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 50%;
+    top: 50svh;
+    transform: translate(-50%, -50%);
+    gap: 2rem;
+    color: #FFF;
+    font-size: 8rem;
+    @include media(map-get($breakpoints, sm)) {
+        font-size: 4rem;
+        gap: 1rem;
+      }
+}

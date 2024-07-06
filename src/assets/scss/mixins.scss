@@ -1,0 +1,17 @@
+@import './global';
+
+@mixin media($max) {
+    @media (max-width: $max){
+        @content;
+    }
+}
+
+@mixin block-title-font {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+@mixin block-title-text {
+    font-weight: 400;
+    font-size: 24px;
+}

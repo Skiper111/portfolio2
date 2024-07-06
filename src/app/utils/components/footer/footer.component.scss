@@ -1,0 +1,30 @@
+@import '../../../../assets/scss/gutter';
+@import '../../../../assets/scss/mixins';
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10rem;
+    background: #e49366;
+    padding: 3rem;
+    @include media(map-get($breakpoints, sm)) {
+      flex-direction: column;
+      padding: 1rem;
+      gap: 2rem;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      a {
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: color .4s cubic-bezier(.165,.84,.44,1);
+        &:hover {
+          color: #f1efeb;
+        }
+      }
+    }
+  }
+  

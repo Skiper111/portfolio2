@@ -1,0 +1,132 @@
+@import '../../../../assets/scss/mixins';
+@import '../../../../assets/scss/gutter';
+
+.projects-wrapper {
+    background: #f1efeb;
+    min-height: 100svh;
+    position: relative;
+    .title {
+      padding: 4rem 4rem 8rem;
+      font-weight: 700;
+      font-size: 5rem;
+      @include media(map-get($breakpoints, lg)) {
+        padding: 2rem 2rem 4rem;
+        font-size: 4rem;
+      }
+      @include media(map-get($breakpoints, xs)) {
+        font-size: 2rem;
+        padding: 2rem;
+      }
+    }
+    .projects {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      border-top: 1px solid #0e0e0e;
+      @include media(map-get($breakpoints, sm)) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .project {
+        display: flex;
+        overflow: hidden;
+        gap: 2em;
+        cursor: pointer;
+        border-bottom: 1px solid #0e0e0e;
+        padding: 2em;
+        position: relative;
+        color: #0e0e0e;
+        text-decoration: none;
+        @include media(map-get($breakpoints, lg)) {
+          padding: 1.5em;
+        }
+        @include media(map-get($breakpoints, md)) {
+          flex-direction: column;
+        }
+        &:nth-child(odd) {
+          border-right: 1px solid #0e0e0e;
+          @include media(map-get($breakpoints, sm)) {
+            border-right: none;
+          }
+        }
+        &-img {
+          position: relative;
+          z-index: 2;
+          object-fit: cover;
+          width: 100%;
+          height: 280px;
+          transition: transform .5s cubic-bezier(.645,.045,.355,1);
+        }
+  
+        &:hover {
+          .project-img {
+            transform: scale(1.2);
+          }
+        }
+        
+        &-img-wrapper {
+          flex-shrink: 0;
+          overflow: hidden;
+          width: 35%;
+          @include media(map-get($breakpoints, md)) {
+            width: 100%;
+            height: 20rem;
+          }
+        }
+  
+        &-title {
+          z-index: 2;
+          position: relative;
+          font-weight: 700;
+          font-size: 2em;
+          @include media(map-get($breakpoints, lg)) {
+            font-size: 1.8em;
+          }
+        }
+  
+        &-body {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 100%;
+        }
+  
+        &-text {
+          font-size: 1.5em;
+          @include media(map-get($breakpoints, lg)) {
+            font-size: 1em;
+          }
+        }
+  
+        &-bg {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        &-link-image {
+          position: relative;
+          display: flex;
+          flex-shrink: 0;
+          justify-content: center;
+          align-items: center;
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          background-color: #0e0e0e;
+          @include media(map-get($breakpoints, md)) {
+            position: absolute;
+            z-index: 3;
+            top: 14rem;
+            right: 2rem;
+          }
+          img {
+            width: 2rem;
+            height: 2rem;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }

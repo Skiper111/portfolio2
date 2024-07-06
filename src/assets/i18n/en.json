@@ -1,0 +1,50 @@
+{
+    "name": "KOSTENKO KYRYLO",
+    "position": "FRONT END DEVELOPER",
+    "L": "L",
+    "O": "O",
+    "A": "A",
+    "D": "D",
+    "I": "I",
+    "N": "N",
+    "G": "G",
+    "projects": {
+        "title": "MY PROJECTS",
+        "project_title_01": "A-Bank site",
+        "project_text_01": "The official website of A-Bank, written in React.",
+        "project_title_02": "Loader animation",
+        "project_text_02": "Corporate logo animation make with svg and css.",
+        "project_title_03": "Mobile menu",
+        "project_text_03": "Corporate site mobile menu avaible after scan qr-code or direct link",
+        "project_title_04": "Business card",
+        "project_text_04": "The employee's business card is available after scanning the qr-code or direct link.",
+        "project_title_05": "Custom qr-code",
+        "project_text_05": "Qr-code which redirects on mobile menu site. Qenerated on vue.js with ref witch generated on back and keeps track of transitions. 100 black and 100 white were printed for placement in bank branches."
+    },
+    "navs": {
+        "about_me": "About Me",
+        "skills": "Skills",
+        "experience": "Experience",
+        "projects": "Projects"
+    },
+    "socials": {
+        "linkedin": "LINKEDIN",
+        "github": "GITHUB",
+        "instagram": "INSTAGRAM",
+        "facebook": "FACEBOOK"
+    },
+    "sections": {
+        "section_title_01": "ABOUT ME",
+        "section_text_01_01": "Hi there! I'm an enthusiastic front-end developer with a passion for building beautiful and intuitive web applications.Though relatively new to the industry, my eagerness to learn and grow has driven me to rapidly develop my skills and knowledge.In the future, I want to become a full stack developer.",
+        "section_text_01_02": "In my free time, I enjoy reading books, doing sports, riding a bicycle, and engaging in botany.",
+        "section_title_02": "SKILLS",
+        "section_text_02_01": "HTML5 and modular CSS3, ensuring accessibility and responsive design.",
+        "section_text_02_02": "CSS preprocessors like SASS and LESS for efficient and organized stylesheets.",
+        "section_text_02_03": "JavaScript, including features like async/await, destructuring, and arrow functions.",
+        "section_text_02_04": "Popular frameworks and libraries such as React, Angular, and Vue.js.",
+        "section_text_02_05": "Familiar with module bundlers like Webpack.",
+        "section_text_02_06": "Git for version control, collaborating on projects with GitHub and GitLab.",
+        "section_title_03": "EXPERIENCE && EDUCATION",
+        "section_text_03": "Completed front-end courses at the IT school 'Level Up,' after which I got a job as a front-end developer at A-Bank. There, I mainly worked on the development of internal banking software systems for more than 2 years. I also engage in self-development, such as taking courses on Udemy and reading professional literature."
+    }
+}

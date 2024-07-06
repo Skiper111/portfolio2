@@ -1,0 +1,52 @@
+.spinner-bg {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }  
+  #apple {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      height: 250px;
+  }
+  #bg {
+    fill:  none;
+    stroke: #64b22c;
+    stroke-opacity: 0.1;
+  }
+  #fill {
+    fill:  none;
+    stroke: #00D352;
+    stroke-opacity: 1;
+    stroke-dasharray: 38px, 38px;
+    stroke-dashoffset: -1;
+    animation: fillApple 0.7s linear infinite;
+  }
+  
+  #leaf {
+    fill:  #00D352;
+    width: 30%;
+    height: 30%;
+    margin-bottom: -5%;
+    animation: rotateLeaf 1.2s linear infinite;
+  }
+  
+  @keyframes fillApple {
+    0% {
+      stroke-dashoffset: -1;
+    }
+    100% {
+      stroke-dashoffset: -75;
+    }
+  }
+  
+  @keyframes rotateLeaf {
+    0% {
+      transform: rotateY(0);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }

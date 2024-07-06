@@ -1,0 +1,23 @@
+<div #projectsWrapper class="projects-wrapper">
+    <div class="title">{{ 'projects.title' | translate}}</div>
+    <div class="projects">
+        @for (project of projects; track project.title) {
+            <a [href]="project.link" target="_blank" class="project" (mouseenter)="projectHoverEvent($event)" (mouseleave)="projectHoverEvent($event)">
+              <div class="project-img-wrapper">
+                  @if (project.imgLink) {<img class="project-img" alt="banner" [src]="project.imgLink">} 
+                      @else {<app-loader-project></app-loader-project>}
+              </div>
+              <div class="project-bg"></div>
+              <div class="project-body">
+                <div class="project-title">
+                  {{project.title | translate}}
+                </div>
+                <div class="project-text">{{project.text | translate}}</div>
+              </div>
+              <div class="project-link-image">
+                <img alt="arrow" src="/assets/img/arrow.svg">
+              </div>
+          </a>
+          }
+    </div>
+  </div>
